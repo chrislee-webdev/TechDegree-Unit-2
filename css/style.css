@@ -58,8 +58,43 @@ a{
 .profile-image{
     padding-bottom:15px;
     }
+
+span{
+    margin-right:30px;
 }
 
 /*=====Media Queries=====*/
 
+@media (min-width: 768px) {
+    .main-nav li{
+        display:inline-block;
+        margin-right:15px;
+        background-color:rgb(211,211,211);
+    }
 
+    .intro{
+        float:left;
+    }
+
+    .profile-image{
+        float:right;
+        padding-left:25px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
