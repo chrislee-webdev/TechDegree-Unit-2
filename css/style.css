@@ -1,3 +1,48 @@
 *{
     box-sizing:border-box;
 }
+
+body{
+    line-height:1.6em;
+    background-color:rgb(211,211,211);
+}
+
+.main-header{
+    text-align:center;
+}
+
+.container{
+ padding:1em;   
+}
+
+.main-content{
+    background-color:white;
+    text-align:center;
+    padding: 15px 15px;
+}
+
+footer{
+    text-align:center;
+    padding:0 1em 2em;
+}
+
+.project-image{
+    width:100%;
+}
+
+ul{
+    list-style-type:none;
+    padding-left:0;
+}
+
+.main-nav li{
+    display:block;
+    background-color:white;
+    margin:5px;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+a{
+    text-decoration:none;
+}
