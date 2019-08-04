@@ -27,6 +27,7 @@ body{
 footer{
     text-align:center;
     padding:0 1em 2em;
+    margin-bottom:5px;
 }
 
 .project-image{
@@ -59,9 +60,29 @@ a{
     padding-bottom:15px;
     }
 
+.bottom{
+    width:100%
+    margin:0 auto;
+    text-align:center;
+    border-bottom:solid .5px black;
+}
+
 span{
     margin-right:30px;
 }
+
+#footer-links{
+    padding-top:15px;
+}
+
+#footer-name{
+    float:left;
+}
+
+#back-to-top{
+    float:right;
+}
+
 
 /*=====Media Queries=====*/
 
@@ -81,12 +102,32 @@ span{
         padding-left:25px;
     }
 
+    .col{
+        display:inline-block;
+        width:50%;
+        margin-right:-2px;
+        padding-left:15px;
+    }
+
+    #footer-name{
+        float:left;
+    }
+
+    #back-to-top{
+        float:right;
+    }
 
 }
 
+@media (min-width:1024px) {
 
-
-
+    .col{
+        display:inline-block;
+        width:33%;
+        margin-right:-2px;
+        padding:15px 10px;
+    }
+}
 
 
 
