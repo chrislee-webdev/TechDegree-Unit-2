@@ -5,6 +5,7 @@
 body{
     line-height:1.6em;
     background-color:rgb(211,211,211);
+    font-family: 'Playfair Display', serif;
 }
 
 .main-header{
@@ -45,13 +46,11 @@ ul{
     margin:5px auto;
 }
 
-.main-nav a{
-    padding:15px 10px;
-}
-
 a{
     color:black;
     text-decoration:none;
+    display:block;
+    padding:10px 15px;
 }
 
 .name,
@@ -61,7 +60,7 @@ a{
     }
 
 .bottom{
-    width:100%
+    width:100%;
     margin:0 auto;
     text-align:center;
     border-bottom:solid .5px black;
@@ -93,6 +92,14 @@ span{
         background-color:rgb(211,211,211);
     }
 
+    .col{
+        display:inline-block;
+        width:50%;
+        margin-right:-2px;
+        padding-left:15px;
+    }
+
+
     .intro{
         float:left;
     }
@@ -100,13 +107,6 @@ span{
     .profile-image{
         float:right;
         padding-left:25px;
-    }
-
-    .col{
-        display:inline-block;
-        width:50%;
-        margin-right:-2px;
-        padding-left:15px;
     }
 
     #footer-name{
@@ -119,16 +119,15 @@ span{
 
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
 
     .col{
         display:inline-block;
-        width:33%;
+        width:30%;
         margin-right:-2px;
         padding:15px 10px;
     }
 }
-
 
 
 
