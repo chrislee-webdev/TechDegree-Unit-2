@@ -5,20 +5,22 @@
     
         <head>
             <title>Mobile-First Responsive Layout</title> 
-            <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/style.css">
         </head>
 
     <body>
-        <header class="main-header clearfix">
+        <header class="main-header clearfix" id="top">
 
             <h2 class="name">Christopher Lee</h2>
 
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills and Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <img src="images/responsive-layout-profile.png" alt="Responsive Layout Profile Picture" class="profile-image">
@@ -29,10 +31,10 @@
         </header>
 
         <div class="container clearfix">
-        <div class="main-content">
+        <div class="main-content clearfix">
 
             
-            <h3>Portfolio</h3>
+            <h3 id="portfolio">Portfolio</h3>
 
             <div class="col">
             <img src="images/portfolio-1.png" alt="Portfolio Image-1" class="project-image">
@@ -73,22 +75,68 @@
         </div>
         </div>
 
+        <div class="container clearfix">
+            <div class="main-content clearfix">
+    
+                
+                <h3 id="skills">Skill and Interests</h3>
+    
+                <div class="col">
+                <img src="images/blog.jpg" alt="Blog Image" class="project-image">
+                <h3>Blog</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+    
+                <div class="col">
+                <img src="images/web-design.jpg" alt="Web Design Image" class="project-image">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+                
+                <div class="col">
+                <img src="images/analytics.jpg" alt="Analytics Image" class="project-image">
+                <h3>Analytical Skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+    
+                <div class="col">
+                <img src="images/javascript.jpg" alt="JavaScript Image" class="project-image">    
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+    
+                <div class="col">
+                <img src="images/responsive-design.jpg" alt="Responsive Design Image" class="project-image">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+    
+                <div class="col">
+                <img src="images/wordpress.jpg" alt="WordPress Image" class="project-image">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas purus a sapien sodales, sit amet mollis magna finibus. In.</p>
+                </div>
+    
+            </div>
+            </div>
+
     <footer class="clearfix">
         <div class="bottom">
-        <h3>Contact</h3>
+        <h3 id="contact">Contact</h3>
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
         </p>
 
         <ul>
             <li>Phone: +1(111)555-1234</li>
-            <li><a href="mailto:email@yoursite.com?subject=Hello">Email</a></li>
+            <li id="email"><a href="mailto:email@yoursite.com?subject=Hello">Email</a></li>
         </ul>
+
+        <div class="bottom-to-top">
+            <span id="footer-name">Christopher Lee</span>
+            <span id="back-to-top"><a href="#top">BACK TO TOP</a></span>
+        </div
+        >
         </div>
-        
-        <div id="footer-links">
-        <span id="footer-name">Christopher Lee</span>
-        <span id="back-to-top"><a href="#">BACK TO TOP</a></span>
-         </div>
         
     </footer>
 
