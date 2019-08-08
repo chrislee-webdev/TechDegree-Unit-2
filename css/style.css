@@ -48,7 +48,7 @@ ul{
     padding-left:0;
 }
 
-.nav li{
+.main-nav li{
     display:block;
     background-color:#939393;
     margin:5px auto;
@@ -62,16 +62,12 @@ a{
 
 }
 
-a:hover{
-    background-color:#939393;
-}
-
 a:visited{
     color:blue;
 }
 
 .name,
-.nav,
+.main-nav,
 .profile-image{
     padding-bottom:15px;
     }
@@ -113,8 +109,24 @@ span{
 
 /*=====Media Queries=====*/
 
+@media (min-width: 320px) {
+    .bottom-nav{
+        display:none;
+    }
+}
+
+
 @media (min-width: 768px) {
-    .nav li{
+
+    .bottom-nav{
+        display:inline;
+    }
+    
+    .bottom-nav li{
+        float:right;
+    }
+    
+    .main-nav li{
         display:inline-block;
         margin-right:15px;
         background-color:#939393;
@@ -139,10 +151,26 @@ span{
         padding-left:25px;
     }
 
+    #back-to-top{
+        display:none;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    
+
+
+    .name{
+        float:left;
+        padding-top:5px;
+    }
+
+    .main-nav{
+        float:right;
+        padding-left:5px;
+    }
+
+
     .col{
         height:500px;
         text-align:center;
@@ -152,6 +180,13 @@ span{
         margin-right:-2px;
     }
 
+    .bottom-nav{
+        display:inline;
+    }
+    
+    .bottom-nav li{
+        float:right;
+    }
     
     
 }
